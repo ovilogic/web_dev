@@ -1,0 +1,133 @@
+<style>
+    * {
+    box-sizing: border-box
+    }
+
+    #main-doc {
+    }
+
+    #navbar {
+    position: fixed;
+    float: left;
+
+    width: 20%;
+    height: 600px;
+    left: 0px;
+    top: 0px;
+    background-color: grey;
+    color: white;
+    text-shadow: 2px 2px 5px cyan;
+    box-shadow: 5px 5px 5px black;
+
+    }
+
+    #content {
+    width: 80%;
+    float: right;
+    }
+
+    #main-doc {
+
+    }
+
+
+    header {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-gap: 20px;
+    padding: 5px;
+
+    }
+
+    .main-section {
+    }
+
+    .see-border {
+    border-style: dotted;
+    border-width: 2px;
+    border-color: rgb(0, 200, 200);
+    }
+
+    .nav-link {
+    display: block;
+    padding: 30px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(0, 230, 230);
+    }
+
+    @media (max-width: 500px) {
+    main {
+    font-size: 10;
+    }
+    }
+
+</style>
+
+
+<main id="main-doc" class="see-border">
+    <nav id="navbar" class="see-border">
+        <header class="see-border">Sections of this website:
+            <div id="nav-buttons">
+                <a class="nav-link" href="#Prerequisite_Ramblings">Prerequisite Ramblings</a>
+                <a class="nav-link" href="#section1">Section 1</a>
+                <a class="nav-link" href="#section2">Section 2</a>
+                <a class="nav-link" href="#section3">Section 3</a>
+                <a class="nav-link" href="#section4">Section 4</a>
+                <a class="nav-link" href="#section5">Section 5</a>
+
+            </div>
+        </header>
+
+    </nav>
+
+    <div id="content" class="see-border">
+        <h1>A Bit on Python's Useful Modules</h1>
+        <section class="main-section" id="Prerequisite_Ramblings"></section>
+            <header>Prerequisite Ramblings</header>
+            <h3>How to view mathematics</h3>
+                <p>Let's start off with a bit of philosophical musing on mathematics. What is maths? Bertrand Russell
+                and Whitehead attempted an answer a century ago and ended up with several kilos of writing and not
+                much else that either philosophy or mathematics remembers them by. The right question is what our attitude
+                towards mathematics should be. How should we relate to it as programmers? To see it as akin to
+                something holy or the ultimate recognition of competence does not seem to be something senior developers
+                would agree with. Instead they favour the view that you should see it as something subsidiary to the
+                programming enterprise as a whole. A means, a tool. Perhaps it would not be too farfetched to call it a
+                technology. Just like being able to aim well when throwing an object was a technology for early humans. Or
+                the ability to direct attention at an object being pointed at.</p>
+
+
+        <section id="Random_Module" class="main-section"></section>
+            <header>Random Module</header>
+                <p>The function randint() works well for producing random numbers but it has the disadvantage that
+                some of those numbers will repeat themselves. In come choice() and sample().</p>
+        <p>choice(sequence) chooses a random number from a number and returns it.</p>
+        <code></code>
+                <li></li>
+                <p></p>
+        <section id="section2" class="main-section"></section>
+            <header>Section 2</header>
+                <p></p>
+        <code></code>
+                <li></li>
+                <p></p>
+        <section id="section3" class="main-section"></section>
+            <header>Section 3</header>
+                <p></p>
+        <code></code>
+                <li></li>
+                <p></p>
+        <section id="section4" class="main-section"></section>
+            <header>Section 4</header>
+                <p></p>
+        <code></code>
+                <li></li>
+                <p></p>
+        <section id="section5" class="main-section"></section>
+            <header>Section 5</header>
+                <p></p>
+        <code></code>
+                <li></li>
+                <p></p>
+    </div>
+</main>

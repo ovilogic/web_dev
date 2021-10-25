@@ -1,0 +1,204 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide&effect=neon">
+<script src="https://kit.fontawesome.com/d36483f88d.js" crossorigin="anonymous"></script>
+<style>
+
+* {
+box-sizing: border-box;
+}
+
+
+
+    #navbar {
+    position: fixed;
+    top: 0px;
+    padding: 5px;
+    width: 100vw;
+    height: auto;
+    background: black;
+    left: 0px;
+    outline-style: ridge;
+    outline-color: rgb(190, 250, 50);
+    outline-width: 6px;
+
+    }
+
+    #links {
+    position: relative;
+    margin-left: 70%;
+    margin-right: 20%;
+    width: 30%;
+    background: black;
+    text-align: center;
+    font-variant: small-caps;
+    font-size: 130%;
+    font-family: audiowide, lucida console, monospace, helvetica;
+    font-weight: bold;
+    color: rgb(200, 255, 200);
+
+
+    }
+
+    #welcome-section {
+    height: 100vh;
+    background-color: silver;
+    text-align: center;
+    text-shadow: 10px 27px 5px white;
+    letter-spacing: 5px;
+    color: rgb(200, 255, 200);
+    padding: 250px 0px;
+    font-family: audiowide, lucida console;
+    }
+
+    #motto {
+    text-shadow: none;
+    margin-top: 130px;
+    margin-left: 700px;
+    display: none;
+    }
+
+
+  #content {
+    top: auto;
+    width: 100vw;
+    margin-left: -9px;
+    }
+
+    #projects {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(200, 255, 200);
+    padding: 10px;
+    overflow: auto;
+    }
+
+    .float {
+    float: left;
+    width: 27vw;
+    height: auto;
+    margin-left: 20px;
+    margin-top: 60px;
+    }
+
+
+    #image-git {
+    width: 100%;
+    height: 30%;
+
+    }
+
+    #image-2 {
+    width: 100%;
+    height: 30%;
+    }
+
+    .b {
+    border-width: 5px;
+    border-style: solid;
+    border-color: grey;
+    }
+
+    iframe {
+    display: none;
+    }
+
+    #navbar a:link {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+
+    }
+
+    #navbar a:hover {
+    color: purple;
+    }
+
+    #navbar a:active {
+    color: white;
+    }
+
+    #navbar a:visited {
+    color: purple;
+    }
+
+    #ovilogic {
+    margin: auto 560px;
+    }
+
+    #motto {
+    width: 500px;
+    margin-left: 200px;
+    }
+
+
+    #ovilogic:hover #motto {
+    display: block;
+    position: absolute;
+    }
+
+
+
+
+@media (max-width: 300px) {
+
+#links {
+width: 230px;
+}
+}
+
+</style>
+
+
+<body >
+
+<navbar id="navbar" >
+
+    <div id="links" class="font-effect-neon">
+        <a href="#welcome-section">home   <i class="fas fa-home"></i></i></a>
+        <a href="#projects">work    <i class="fas fa-briefcase"></i></a>
+
+        <a href="#contact">cont@ct</a>
+    </div>
+
+</navbar>
+
+<div id="content">
+
+
+    <div id="welcome-section" name="viewport">
+      <meta name="viewport" content="height=device-height, initial-scale=1.0">
+        <div id="ovilogic">
+        <h1>ovilogic</h1>
+
+        <p id="motto">Web Design since 1862</p>
+        </div>
+    </div>
+
+
+    <div id="projects" class="b">
+
+        <div id="git" class="float">
+            <a id="profile-link" href="https://github.com/ovilogic?tab=projects" target="_blank">
+                <image id="image-git" class="b" src="https://miro.medium.com/max/719/0*kHdpA0lO-qQVbaXq.png"
+              alt="generic image of github">My GitHub</image>
+            </a>
+        </div>
+
+        <div id="proj2" class="float">
+            <a id="proj2-link" href="https://codepen.io/ovilogic/full/GRvoQGQ" target="_blank">
+                <image id="image-2"
+                       class="b" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEPc329rGKGSsxPdk7TWJNoVKm6sF9Wpn9Bw&usqp=CAU">
+                    Proj</image>
+            </a>
+
+        </div>
+
+    </div>
+
+
+
+
+</div>
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ML8JomV445E?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>

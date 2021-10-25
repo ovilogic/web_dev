@@ -1,0 +1,133 @@
+<style>
+    #header {
+    font-size: 20px;
+    border-color: black;
+    border-width: 4px;
+    border-style: solid;
+    display: flex;
+    justify-content: left;
+    }
+
+    #header-img {
+    width: 70px;
+    height: 50px;
+    position: relative;
+    left: 20px;
+    }
+
+    #nav-bar {
+    position: fixed;
+    top: 15px;
+    right: 30px;
+    }
+
+    #page-content {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-gap: 20px;
+    grid-gap: 200px;
+    border-width: 20px;
+    border-color: blue;
+    border-style: solid;
+    }
+
+
+    #email-cell {
+    justify-self: center;
+    }
+
+    #email {
+/* Be aware that the width will be 100% of the #email-cell defined above and not the width of the entire screen */
+    width: 100%;
+    }
+
+    #video {
+    justify-self: center;
+    }
+
+    #features {
+    background-color: rgb(200, 200, 200)
+    }
+
+    .see-border {
+    border-style: solid;
+    border-width: 5px;
+    border-color: fuchsia;
+    }
+
+    .nav-link {
+    font-size: 20px;
+    }
+
+    @media (max-width: 800px) {
+    #page-content {
+    font-size: 10px;
+    }
+    #header {
+    font-size: 10px;
+    }
+    nav {
+    transform: scale(70%);
+    font-size: 10px;
+    }
+    body {
+    transform: scale(70%);
+    }
+
+
+
+
+</style>
+
+
+<body class="see-border">
+
+<header id="header">Product Landing Project
+
+<img class="see-border" id="header-img"
+     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIdeeFpNV5sqc_cCrlbWX0Sgh1C0XoP_qXcw&usqp=CAU">
+
+    <nav class="see-border" id="nav-bar">
+        <div id="nav-text">
+        <a class="nav-link" href="#features">Features</a>
+        <a class="nav-link" href="#video">How it works</a>
+        <a class="nav-link" href="#web-dev">Web Dev Map</a>
+        </div>
+    </nav>
+
+</header>
+<div id="page-content">
+    <!-- what happens is that the div object is now everything below the header */ -->
+    <div id="email-cell">
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <p align="center" class="see-border">Please enter your email here
+                <p align="center">
+                <input id="email" type="email" required placeholder="Please enter your email here" name="email">
+                </p>
+            </p>
+
+                <input type="submit" id="submit" value="Get a validation email">
+        </form>
+    <div id="features">
+        <h1>Features:</h1>
+        <ul>
+            <li>fixed navbar</li>
+            <li>media query that shrinks the fonts on this page when the screen is small;</li>
+            <li>embedded youtube video;</li>
+        </ul>
+    </div>
+    </div>
+
+    <iframe id="video" class="see-border" width="560" height="315"
+            src="https://www.youtube.com/embed/uEoJGUK3m5w" title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+
+    </iframe>
+    <div id="web-dev">
+        <img src="https://cdn.sanity.io/images/xs6ohj1p/production/25fcea5966d67b7911113bb6d2a77690ee802c5c-1920x1080.png?w=1200&fit=crop&auto=format">
+
+    </div>
+</div>
+
+</body>

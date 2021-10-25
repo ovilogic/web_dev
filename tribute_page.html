@@ -1,0 +1,182 @@
+<style>
+
+#main {
+    font-family: helvetica;
+    font-size: 18;
+    }
+
+#title {
+    font-size: 30;
+    text-align: center;
+    color: red;
+    }
+
+
+#img-div {
+    display: grid;
+    grid-template-rows: 100%;
+    justify-items: center;
+    border-color: purple;
+    border-width: 5px;
+    border-style: solid;
+    }
+
+#image {
+    max-width: 100%;
+    height: auto;
+
+
+
+    }
+
+#img-caption {
+    font-size: 14;
+    border-color: brown;
+    border-width: 5px;
+    border-style: solid;
+    }
+
+#tribute-info {
+    border-color: black;
+    border-width: 10px;
+    border-style: solid;
+    }
+
+a:hover {
+    color: fuchsia;
+    }
+
+#tribute-link {
+    font-weight: bold;
+    color: green;
+    }
+
+</style>
+
+<body id="main">
+<!-- A second read of learning material, focusing on elements needed to create this page -->
+<h1 id="title">
+    CSS. Oriented Recap
+</h1>
+<div id="img-div">
+    <img align="centered" id="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbkvh0c8TbqK_IXDYcSaQHasQobZ52dMH1Ow&usqp=CAU"
+         alt="generic image of a computer screen with some CSS code">
+    <div id="img-caption">Cascading Style Sheets (CSS)</div>
+
+</div>
+<h1> Grounding</h1>
+<p id="tribute-info"> HTML code defines the content of a webpage, while CSS defines the style of that content.
+    There are two ways to add style to your webpage: either through inline CSS statements or using a CSS style block
+at the beginning.
+</p>
+<h1>
+    Important terms, tools, and concepts in CSS
+</h1>
+<ul>
+    <li> inline = does not start on a new line and only takes up as much space as necessary;</li>
+    <li>selectors = style attributes defined in the opening style block as follows: name of element without any brackets +
+        style rules between curly brackets;</li>
+    <li>class = reusable styles declared as: period (.) + name you want to give to the class + style attributes btw curly
+        brackets;</li>
+    <li>id attribute = specifies a unique id for an HTML element;</li>
+        <ul>
+            <li># = how you reference an id attribute inside the style element;</li>
+            <li>giving the element an id for the sake of it = It's a good practice to assign labels that describe
+                the function of the element.</li>
+        </ul>
+    <li>unordered list (<'ul'>) = a list in which the items are not numbered;</li>
+    <li> item <'li'> = declares the following text to be a list item. !Yes, you have to type it for each list item
+        like it was the Stone Age...!</li>
+    <li> <'div> division element = a general purpose container for other elements; probably the most commonly used
+        HTML element of all;</li>
+    <li> image caption <'figcaption'> = text within the image element that is added as a caption to the image;</li>
+    <li> <'a'> anchor element = an anchor is a piece of text which marks the beginning and / or the ened of a hypertext
+        link;
+        <ul>
+            <li>'href' = an optional attribute that defines the network address;</li>
+            <li> anchor text = a link needs a text that will become the link; it is plain text written in between
+            <'a'> and <'/a'>;</li>
+        </ul></li>
+    <li>'transform' property = changes the scale of an element;stated within the curly brackets;</li>
+    <li> Responsive Web Design = the practice of designing flexible websites that can respond to different screen sizes,
+        orientations and resolutions;
+        <ul>
+            <li>viewport = the user's visible area of a webpage, differing with each device;</li>
+            <li>'max-width: 100%;' = the maximum size of the element relative to its container; at 100%, it is never
+        wider than the container it is in;</li>
+        <li> 'height: auto' = makes the element keep its original aspect ratio;</li>
+            'display: flex' = allows you to use flex properties on an element to build a responsive page;
+        </li>
+
+        </ul>
+    </li>
+    <li> CSS Box Model = each element is treated as its own box;
+        <ul> <li> the normal flow of a document = the default layout of elements by which block-level items automatically
+            start on a new line (think headings, paragraphs, and divs) while inline items sit within surrounding content;</li>
+            <li> 'position: relative;' = makes the position of the element relative to its current position
+            in the natural flow (ex: 'bottom: 10px;');</li>
+            <li> 'position: fixed' = it won't move when you scroll;</li></ul>
+    </li>
+    <li> 'display: grid;' = not really about creating a table on your page. More to do with manipulating CSS objects
+        in relation to one another. After all, they are all boxes (see the above CSS Box Model concept), even if
+        don't see the borders. Just create some borders and you can see the underlying layout.
+        <ul>
+            <li> adding rows and columns = 'grid-template-rows' and 'grid-template-columns';</li>
+            <ul>
+                <li>fr = sets the column or row to a fraction of the available space,</li>
+                <li>auto: sets the column or row to the width or height of its content automatically</li>
+                <li>%: adjusts the column or row to the percent width of its container.</li></ul>
+            <li>'container' = the parent element;</li>
+            <li> 'items' = the children;</li>
+            <li> 'justify-items' = aligns items (children) horizontally; takes the usual Ms Word values: left, center,
+                right;</li>
+            <li>'align-items' = aligns items (children) vertically; values are: start (top), center, end (bottom);</li>
+
+        </ul></li>
+    <li> borders = !Adding a border makes your boxes visible. It's like the print() function in Python.
+        <ul><li>defining a border = border-color, border-width, border-style (ex: solid);</li></ul></li>
+    <li>labels = The for attribute of <'label'> must be equal to the id attribute of the related element to bind them
+        together. A label can also be bound to an element by placing the element inside the <'label'> element. </li>
+    <li>dropdown menus = a div element having hte lass 'custom-select' and then you have the <'select'><'/select'>
+        sub-element in it which, in turn, has <'option'><'/option'> sub-elements which are basically the dropdown menu
+        options to choose from;</li>
+    <li>radio buttons = you create a radio button as a special type of input, that is an input with the type="radio".
+        !The thing to remember is that you have to group your radio buttons together so that if one is selected all the
+        others are deselected. You do this by setting a name for each button (input line) and that name is the same
+        for all buttons.
+        <ul><li>value = if you don't assign a value to your radio button, the data it will send via the submit button is
+            'on' for whatever the name of the group was set.</li>
+        </ul></li>
+    <li>textarea = text input from a user, but you can write as much text as you like. The syntax is as follows:
+        <'textarea' cols="" rows=""><'/textarea'></li>
+    <li>header = the header tag. It's used to wrap introductory information or navigation links for its parent tag
+        and works well around content that's repeated at the top on multiple pages. !Watch out! It is not the same
+        thing as the 'head' element at the very top of an HTML, which contains the title of the page,
+        meta information, etc. </li>
+    <li>nav = a screen reader feature that wraps around the main navigation links on a page;</li>
+    <li>internal links to a page = also with an anchor tag, <'a'>, only instead of an http link for href=,
+        you assign the id of the element on the page being referenced</li>
+    <li>padding = an element's padding controls the amount of space between the element's content and its border;
+        for ex, when having a text inside a box, it's the space surrounding hte text right up to the border;</li>
+    <li>margin = An element's margin controls the amount of space between an element's border and surrounding elements;
+        for ex, the space between a nested box and its container;
+        <ul><li>adjusting the margin on each side = 'margin-bottom', 'margin-top', 'margin-left', 'margin-right';
+        </li></ul></li>
+    <li>form action="url" = where to send the data for the form;</li>
+    <li>media query = adjust CSS features when the screen is less than or more than a certain size; command in CSS
+        is '@media (min-height / etc) {}';</li>
+    <li>adjust size of an element = 'height' 'width';</li>
+
+
+</ul>
+
+<p> To find out more visit the official maintainer of HTML and CSS standards:
+    <a id="tribute-link" target="_blank" href="https://www.w3.org/standards/webdesign/htmlcss">
+        The World Wide Web Consortium (W3C)</a>
+    .
+</p>
+
+
+</body>
+
+</html>

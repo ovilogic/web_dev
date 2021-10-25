@@ -1,0 +1,100 @@
+<style>
+
+    #title {
+color: rgb(20,20,20);
+text-align: center;
+font-family: helvetica;
+}
+
+    #description {
+    color: rgb(50, 58, 58);
+    text-align: left;
+    font-family: helvetica;
+
+    }
+
+    #survey-form {
+    background: rgb(200, 220, 220);
+    }
+
+    #name {
+    width: 30%;
+    }
+
+    #email {
+    background-image: url('searchicon.png');
+    width: 30%;
+}
+
+
+    .see-border {
+    border-color: grey;
+    border-width: 2px;
+    border-style: solid;
+    }
+
+    .background {
+    background: rgb(220, 220, 220);
+    }
+
+    .wide-input {
+    width: 30%;
+    }
+
+
+
+</style>
+
+<body class="background">
+<h1 id="title" class="see-border">Creating a Survey Form</h1>
+
+<p id="description" class="see-border"> A short survey form to test out basic tools when putting together a form.
+To create a form element (<'form'><'/form'>), you need to declare an 'action' attribute, which is the website where
+you want to submit the form data. There should also be an 'input' element nested in the form (<'input'>). You add a
+'submit' button with <'button' type="submit">Submit<'/button></p>
+
+<form id="survey-form" class="see-border">
+    <p><label id="name-label" for="name">Name</label></p>
+    <input id="name" type="text" required placeholder="Please enter your name">
+    <p><label id="number-label" for="number"> Age(optional)</label></p>
+    <input id="number" class="wide-input" type="number" min="0" max="130" placeholder="Please enter your age">
+    <p><label id="email-label" for="email">Email</label></p>
+    <input id="email" type="email" required placeholder="Please enter your email">
+
+    <p>Which option best describes your current role?</p>
+    <div id="dropdown" class="custom-select">
+        <select>
+            <option>Please select</option>
+            <option>Unemployed</option>
+            <option>Employed</option>
+        </select>
+    </div>
+    <p>Would you recommend this product to a friend?</p>
+    <p><input name="recommend" type="radio" value="yes">I would</p>
+    <p><input name="recommend" type="radio" value="no">I would not</p>
+    <p><input name="recommend" type="radio" value="maybe">Maybe</p>
+
+
+    <p>What is your favourite feature of CSS forms?</p>
+    <div class="custom-select">
+        <select>
+            <option>Please select</option>
+            <option>Radio Buttons</option>
+            <option>Dropdown Menus</option>
+            <option>Input errors</option>
+        </select>
+    </div>
+
+    <p>What part of CSS Forms you found most difficult?(Check all that apply)</p>
+    <p><input type="checkbox" value="radio buttons">Radio Buttons</p>
+    <p><input type="checkbox" value="dropdown menus">Dropdown Menus</p>
+    <p><input type="checkbox" value="input">Input</p>
+
+
+    <p>Any comments or suggestions?</p>
+    <textarea rows="20" cols="50" placeholder="Enter your comment here..."></textarea>
+
+    <button type="submit" id="submit">submit</button>
+</form>
+
+</body>
