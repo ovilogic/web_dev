@@ -43,9 +43,9 @@ let lcm = {}
                 i = -1
                 continue;
         }
-
         return factors;
         }
+
         let factorised = factors(primed)
         console.log(factorised)
 
@@ -59,9 +59,9 @@ let lcm = {}
       else {lcm[k] = factorised[k];
  }
     }
-
   }
   console.log('LCM ====== ', lcm)
+
   let lesserCM = 1;
   for (let k in lcm) {
     let num = Number(k)
