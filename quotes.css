@@ -1,0 +1,100 @@
+
+      * {
+          box-sizing: border-box;
+          border: 1px dotted black;
+        }
+
+      body {
+        background-color: rgb(150, 150, 50)
+      }
+
+      .flex-container {
+          background-color: rgb(150, 150, 50);
+          display: flex;
+          height: 100vh;
+          top: 0px;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+      }
+
+        #quote-box {
+          background-color: beige;
+          display: flex;
+          flex-direction: column;
+          width: auto;
+          height: auto;
+          align-items: center;
+          position: relative;
+          border: 3px solid black;
+          border-radius: 30px;
+        }
+
+        .frame {
+            padding: 20px;
+            }
+
+        #text {
+            font-family: monospace;
+            font-size: 20px;
+            top: 20px;
+            }
+
+        #new-quote {
+            position: relative;
+            left: 70%;
+            background-color: lightgrey;
+          color: white;
+          width: 69px;
+          padding: 10px;
+          border-radius: 10px;
+            }
+
+          button:active {
+            box-shadow: inset 0 0 10px grey;
+          }
+
+        #author {
+            display: block;
+            text-align: right;
+            font-family: 'Lucida Handwriting';
+            }
+
+        #click {
+            position: relative;
+            bottom: 20px;
+            width: auto;
+            height: auto;
+            margin-bottom: 10px;
+          }
+
+        #tweet-quote {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            text-decoration: none;
+            left: 60px;
+            top: 6px;
+            height: 40px;
+            width: 40px;
+          border-radius: 3px;
+          color: white;
+          background-color: lightgrey;
+          }
+
+        i {
+          display: block;
+          margin: auto;
+        }
+
+        .signed {
+
+            position: relative;
+            top: 20px;
+            }
+
+        #ovilogic {
+            text-decoration: none;
+            color: white}
+
+
